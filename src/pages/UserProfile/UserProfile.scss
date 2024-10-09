@@ -1,0 +1,41 @@
+.profile {
+    display: grid;
+    row-gap: 10px;
+    width: 480px;
+    position: relative;
+    & .title {
+        display: grid;
+        align-items: center;
+        grid-template-columns: calc(100% - 135px) 140px;
+    }
+    & .content {
+        padding-top: 25px;
+        padding-left: 15px;
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+        & .userForm {
+            display: grid;
+            row-gap: 15px;
+            & .line {
+                display: grid;
+                row-gap: 5px;
+                width: min-content;
+                & .comment {
+                    width: 440px;
+                    resize: none;
+                    border-radius: 5px;
+                    height: 60px;
+                    border: 1px solid #D8D8D8;
+                }
+            }
+            & .line > label {
+                font-size: 12px;
+            }
+        }
+    }
+    & .actions {
+        position: absolute;
+        right: 0px;
+        bottom: -35px;
+    }
+}

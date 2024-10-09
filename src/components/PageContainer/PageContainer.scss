@@ -1,0 +1,29 @@
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 160px calc(100% - 160px);
+    color: black;
+    
+    & .menu {
+        padding-top: 100px;
+        padding-left: 15px;
+        background-color: #BDBDBD;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        & .actions {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+    & .content {
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+}
